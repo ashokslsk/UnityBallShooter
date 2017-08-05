@@ -20,3 +20,14 @@ Prefabs are like templates, Using prefabs we can customise the 3d object look an
 
 Just adds the angular drag on the natural physics motion. Basketball will slow down when this is applied. 
 
+**Instantiate** Method. 
+
+**Spawn a ball on spacebar**
+
+use getKeydown() method
+
+if statement inside Update() method
+
+Instantiate() inside the if condition
+
+ 
