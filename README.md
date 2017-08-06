@@ -30,4 +30,37 @@ if statement inside Update() method
 
 Instantiate() inside the if condition
 
+**Adding Velocity to the ball**
+
+Directional velocity can be added as shown below. 
+
+```C#
+void Update () {
+		if (Input.GetKeyDown (KeyCode.LeftArrow)) {
+			GameObject instance = Instantiate (ballPrefab);
+			Rigidbody rb = instance.GetComponent<Rigidbody>();
+			rb.velocity = Vector3.left;
+		}
+	
+		if (Input.GetKeyDown (KeyCode.RightArrow)) {
+			GameObject instance = Instantiate (ballPrefab);
+			Rigidbody rb = instance.GetComponent<Rigidbody>();
+			rb.velocity = Vector3.right;
+		}
+
+		if (Input.GetKeyDown (KeyCode.UpArrow)) {
+			GameObject instance = Instantiate (ballPrefab);
+			Rigidbody rb = instance.GetComponent<Rigidbody>();
+			rb.velocity = Vector3.up;
+		}
+
+		if (Input.GetKeyDown (KeyCode.DownArrow)) {
+			GameObject instance = Instantiate (ballPrefab);
+			Rigidbody rb = instance.GetComponent<Rigidbody>();
+			rb.velocity = Vector3.down;
+		}
+
+	}
+```
+
  
