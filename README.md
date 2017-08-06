@@ -4,7 +4,7 @@
 
 Writing 3D game. 
 
-Scene is a collection object, Which we can use to express the game or unity application. 
+Scene is a collection of object, Which we can use to express the game or unity application. 
 
 Right click in the Assets -> And create a new scene called Main. 
 
