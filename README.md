@@ -110,3 +110,16 @@ Using localRotation object we can eliminate the tilting
 
 ```
 
+**Setting the ball location** **and firing**
+
+
+
+```c#
+	if (Input.GetButtonDown ("Fire1")) {
+			GameObject instance = Instantiate (ballPrefab);
+			instance.transform.position = transform.position;
+			Rigidbody rb = instance.GetComponent<Rigidbody>();
+			rb.velocity = Vector3.forward * Speed;
+		}
+```
+

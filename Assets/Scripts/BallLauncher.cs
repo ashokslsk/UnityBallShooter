@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BallLauncher : MonoBehaviour {
 
-	public float Speed;
+	public float Speed = 10.0f;
 	public GameObject ballPrefab;
 
 
@@ -15,13 +15,12 @@ public class BallLauncher : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Speed = 10.0f;
-
 		if (Input.GetButtonDown ("Fire1")) {
 			GameObject instance = Instantiate (ballPrefab);
 			instance.transform.position = transform.position;
 			Rigidbody rb = instance.GetComponent<Rigidbody>();
-			rb.velocity = Vector3.forward * Speed;
+			Camera camera = GetComponentInChildren<Camera> ();
+			rb.velocity = camera.transform.rotation * Vector3.forward * Speed;
 		}
 	}
 }
