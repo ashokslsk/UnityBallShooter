@@ -27,8 +27,9 @@ public class BallSpawner : MonoBehaviour {
 			rb.velocity = Vector3.right * Speed;
 		}
 
-		if (Input.GetKeyDown (KeyCode.UpArrow)) {
+		if (Input.GetButtonDown ("Fire1")) {
 			GameObject instance = Instantiate (ballPrefab);
+			instance.transform.position = transform.position;
 			Rigidbody rb = instance.GetComponent<Rigidbody>();
 			rb.velocity = Vector3.forward * Speed;
 		}
