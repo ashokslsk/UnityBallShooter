@@ -63,4 +63,33 @@ void Update () {
 	}
 ```
 
- 
+**Rotating the camera in the code**
+
+We will rotate the camera based on the concept called Quaternion. 
+
+```c#
+// Update is called once per frame
+	void Update () {
+		transform.rotation = Quaternion.Euler (0, 1, 0) * transform.rotation;
+
+	}
+```
+
+**Taking mouse input**
+
+Go to edit inside project settings add the **Input** component
+
+then in the component script. 
+
+```c#
+
+	// Update is called once per frame
+	void Update () {
+		float rotationSpeed = 5.0f;
+		float mouseX = Input.GetAxis ("Mouse X") * rotationSpeed;
+		float mouseY = Input.GetAxis ("Mouse Y") * rotationSpeed;
+		transform.rotation = Quaternion.Euler (-mouseY, mouseX, 0) * transform.rotation;
+
+	}
+```
+

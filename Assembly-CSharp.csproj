@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\BallSpawner.cs" />
+     <Compile Include="Assets\Scripts\CameraRotation.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Volumes/ASH/Applications/Unity 5.6/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
