@@ -93,3 +93,6 @@ then in the component script.
 	}
 ```
 
+**Creating a camera gimbal**
+
+ 
